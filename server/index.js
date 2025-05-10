@@ -30,7 +30,7 @@ const maxPages = 10;
     "https://www.google.com/search?q=" + encodeURIComponent(searchQuery);
   const results = [];
 
-  for (let pageNum = 0; pageNum < maxPages; pageNum++) {
+  for (let pageNum = 10; pageNum < maxPages + 10; pageNum++) {
     const url = `${baseUrl}&start=${pageNum * 10}`;
     console.log(`🔍 Scraping Google page ${pageNum + 1}: ${url}`);
 
